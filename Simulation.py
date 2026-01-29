@@ -22,5 +22,5 @@ while True:
       print(n)
     print("=== Simulation End ===\n")
   except:
-    print(f'Invalid input: {n}\nProgram has been shut down')
+    print(f'Invalid input: {n}\nProgram has been shut down.\n')
     break
