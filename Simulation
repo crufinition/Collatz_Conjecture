@@ -16,7 +16,11 @@ def collatz(n):
 while True:
   print(info)
   n = int(input("Enter an interger (a poistive number): "))
-  while n != 1:
-    n = collatz(n)
-    print(n)
-  print("=== Simulation End ===\n")
+  try:
+    while n != 1:
+      n = collatz(n)
+      print(n)
+    print("=== Simulation End ===\n")
+  except:
+    print(f'Invalid input: {n}\nProgram has been shut down')
+    break
